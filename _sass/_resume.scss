@@ -16,32 +16,68 @@
   }
 }
 
+// sidebar styles
+
+.sidebar-left {
+  padding-top: 2rem;
+  text-align: center;
+
+  .avatar {
+    width: 180px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 1.5rem;
+  }
+
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    display: inline-block;
+
+    li {
+      margin-bottom: .6rem;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #555;
+      @include sans;
+      font-size: .95rem;
+
+      &:hover { color: #333; }
+
+      .icon {
+        height: 22px;
+        width: 22px;
+        flex-shrink: 0;
+      }
+
+      .link-label {
+        margin-left: .5rem;
+      }
+    }
+  }
+}
+
 // page header styles
 
 .page-header { padding: 1.5rem 0;
 
-  .avatar {
-    width: 300px;
-    max-width: 100%;
-    //overflow: hidden;
-    //@include border-radius(100px);
-    margin: 0 auto;
-    display: block;
-  }
-
   .header-name {
     @include sans;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 900;
-    text-align: center;
-    letter-spacing: -.15rem;
+    letter-spacing: -.1rem;
     line-height: 1;
-    margin: 1rem 0 0;
+    margin: 0 0 .5rem;
   }
 
   .header-contact-info {
     @include sans;
-    text-align: center;
   }
   .header-contact-info p a {
     color: inherit;
@@ -49,28 +85,22 @@
 
   .title-bar {
     @include section_border;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: .4rem 0;
-    @include clearfix;
 
     .header-title {
       @include sans;
       font-weight: 300;
-      font-size: 1.75rem;
+      font-size: 1.5rem;
       line-height: 2rem;
       letter-spacing: -.05rem;
-      text-align: center;
       margin: 0 0 .5rem;
-
-      @include media_larger_than_mobile {
-        float: left;
-        margin: 0;
-      }
     }
   }
 
   .executive-summary {
-    @include media_larger_than_mobile { font-size: 1.125rem; }
+    margin-top: 1rem;
+    @include media_larger_than_mobile { font-size: 1.05rem; }
   }
 }
 
