@@ -1,6 +1,6 @@
 # Site settings
-title: "Joontaek Oh"
-description: "The resume of Joontaek Oh"
+title: "Juwon Kim"
+description: "Ph.D. Student at KAIST"
 
 # Build settings
 markdown: kramdown
@@ -9,60 +9,25 @@ sass:
   style: compressed
 
 # Resume settings
-resume_avatar:                  "true"
-resume_name:                    "Joontaek Oh"
-resume_title:                   "Postdoctoral Researcher at School of CS in UW-Madison"
+resume_avatar:                  "false"
+resume_name:                    "Juwon Kim"
+resume_title:                   "Ph.D. Student, School of Electrical Engineering, KAIST"
 
-# used for the contact button in _layouts/resume.html
-resume_contact_email:           "joontaek.oh@wisc.edu"
-
-# the next two items are used for schema itemprops in _layouts/resume.html
+resume_contact_email:           "joo97508@kaist.ac.kr"
 resume_contact_telephone:       ""
 resume_contact_address:         ""
 
 resume_header_contact_info:     ""
 display_header_contact_info:    "false"
 
-resume_header_intro: "<p>
-                      Hello! I am Joontaek Oh. I am Ph.D. candidate at Department of Electrical Engineering, Korea Advanced Institute of Science and Technology (KAIST).<br>
-                      I studied and researched Linux IO Stack (EXT4, F2FS, XFS, Block IO, Device Driver, FTL), and Database (Transaction Management, Key-Value Store).<br>
-                      I am a kernel developer.
-                      I can be reached at na94jun at kaist.ac.kr or na94jun at gmail.com. Test is needed!
-                      </p>"
-
-# use "yes" to display the email contact button,
-# "no" to display an "I'm not looking for work" message,
-# or remove the resume_looking_for_work option entirely
-# to leave blank
-resume_looking_for_work:        "yes"
-
-# Decide which sections to use
-# comment out to hide
-#resume_section_experience:      true
-resume_section_education:       true
-resume_section_projects:        true
-#resume_section_skills:          true
-resume_section_recognition:     true
-resume_section_links:           true
-resume_section_associations:    true
-resume_section_interests:       true
+resume_looking_for_work:        "no"
 
 # Resume social links
-# uncomment the options you wish to display, and add your own URL
 resume_social_links:
-  resume_github_url:            "https://github.com/joontaekoh"
-  #resume_twitter_url:           "http://twitter.com/jglovier"
-  #resume_dribbble_url:          "https://dribbble.com/jag"
-  # resume_facebook_url:          "insert Facebook URL here"
-  resume_linkedin_url:          "https://www.linkedin.com/in/joontaek-oh-145610160/"
-  # resume_instagram_url:         "insert your Instagram URL here"
-  # resume_website_url:           "https://joontaekoh.github.io/"
-  #resume_medium_url:            "https://medium.com/@jglovier"
+  resume_github_url:            "https://github.com/JuwonKim97"
+  # resume_linkedin_url:        "https://www.linkedin.com/in/YOUR-LINKEDIN-ID/"
+
 resume_print_social_links:      true
 
 # Design settings
 resume_theme:                   default
-
-# Note: when editing locally, remember to restart
-# your Jekyll server when you edit this file. Changes
-# to _config.yml are only recognized when the server starts
