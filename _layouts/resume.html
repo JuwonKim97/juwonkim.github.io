@@ -20,16 +20,21 @@
                 {% include icons/icon-mail.html %}<span class="link-label">Mail</span>
               </a>
             </li>
-            <!-- <li>
-              <a href="{{ site.resume_social_links.resume_github_url }}" itemprop="sameAs">
-                {% include icons/icon-github.html %}<span class="link-label">GitHub</span>
-              </a>
-            </li> -->
             <li>
               <a href="{{ site.resume_social_links.resume_linkedin_url }}" itemprop="sameAs">
                 {% include icons/icon-linkedin.html %}<span class="link-label">LinkedIn</span>
               </a>
             </li>
+            <li>
+              <a href="cv_juwonkim.pdf">
+                {% include icons/icon-pdf.html %}<span class="link-label">CV</span>
+              </a>
+            </li>
+            <!-- <li>
+              <a href="{{ site.resume_social_links.resume_github_url }}" itemprop="sameAs">
+                {% include icons/icon-github.html %}<span class="link-label">GitHub</span>
+              </a>
+            </li> -->
           </ul>
         </aside>
 
@@ -38,9 +43,6 @@
 
           <header class="page-header">
             <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
-            <div class="title-bar">
-              <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
-            </div>
             <div class="executive-summary" itemprop="description">
               I am a Ph.D. student in the School of Electrical Engineering at <a href="https://www.kaist.ac.kr">KAIST</a>,
               advised by Prof. Youjip Won in the <a href="https://oslab.kaist.ac.kr">Operating Systems Laboratory (OSLab)</a>.
