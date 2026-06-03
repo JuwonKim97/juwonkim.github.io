@@ -1,0 +1,239 @@
+%% Academic CV — Juwon Kim
+%% Compile with: pdflatex academic_cv.tex
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+% ── Colors ──────────────────────────────────────────
+\definecolor{accent}{HTML}{1a3c6e}
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
+
+% ── Section formatting ──────────────────────────────
+\titleformat{\section}
+  {\large\bfseries\color{accent}\scshape}
+  {}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+
+% ── Header / Footer ────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\small\thepage}
+
+% ── Helpers ─────────────────────────────────────────
+\newcommand{\entry}[4]{%
+  \noindent\textbf{#1}\hfill\textit{#2}\\
+  #3\hfill#4\par\vspace{4pt}}
+
+\setlength{\parindent}{0pt}
+
+% ════════════════════════════════════════════════════
+\begin{document}
+
+% ── Name & Contact ──────────────────────────────────
+\begin{center}
+  {\LARGE\bfseries Juwon \textsc{Kim}}\\[6pt]
+  \small
+  Ph.D.\ Student, School of Electrical Engineering, KAIST \\[2pt]
+  \href{mailto:joo97508@kaist.ac.kr}{joo97508@kaist.ac.kr} \quad$\cdot$\quad
+  \href{https://www.linkedin.com/in/juwon-kim-583060206}{LinkedIn}
+\end{center}
+
+% ── Research Interests ──────────────────────────────
+\section{Research Interests}
+Operating System, 
+Filesystems,
+Flash storage,
+Device firmware (Flash Translation Layers),
+Garbage collection, 
+and Learned index. 
+
+% ── Education ───────────────────────────────────────
+\section{Education}
+
+\entry{Ph.D.\ Student in Electrical Engineering}{Mar.\ 2023\,--\,Present}
+{Korea Advanced Institute of Science and Technology (KAIST)}{Daejeon, Korea}
+\begin{itemize}[leftmargin=1.2em, nosep, topsep=2pt]
+  \item Advisor: Prof.\ Youjip Won
+\end{itemize}
+\vspace{4pt}
+
+\entry{M.S.\ in Electrical Engineering}{Mar.\ 2021\,--\,Feb.\ 2023}
+{Korea Advanced Institute of Science and Technology (KAIST)}{Daejeon, Korea}
+\begin{itemize}[leftmargin=1.2em, nosep, topsep=2pt]
+  \item Thesis: \textit{IPLFS: Log-Structured Filesystem without Garbage Collection}
+  \item Advisor: Prof.\ Youjip Won 
+  % \quad$\cdot$\quad GPA: 4.06\,/\,4.3
+\end{itemize}
+\vspace{4pt}
+
+\entry{B.S.\ in Electrical Engineering}{Mar.\ 2016\,--\,Feb.\ 2021}
+{Korea Advanced Institute of Science and Technology (KAIST)}{Daejeon, Korea}
+\begin{itemize}[leftmargin=1.2em, nosep, topsep=2pt]
+  \item Individually Designed Major in Computer Science and Physics
+\end{itemize}
+
+% ── Publications ────────────────────────────────────
+\section{Publications}
+\begin{enumerate}[leftmargin=1.6em, label={[\arabic*]}, nosep, itemsep=5pt]
+
+\item \textbf{Juwon Kim}, Seungjae Lee, Joontaek Oh, Dongkun Shin, Youjip Won,
+      ``D2FS: Device-Driven Filesystem Garbage Collection,''
+      in \textit{Proc.\ USENIX Conference on File and Storage Technologies (FAST)},
+      Santa Clara, USA, Feb.\ 2025.
+
+\item Jieun Kim, Joontaek Oh, \textbf{Juwon Kim}, Seung Won Yoo, Youjip Won,
+      ``OPIMQ: Order Preserving IO Stack for Multi-Queue Block Device,''
+      in \textit{Proc.\ USENIX Conference on File and Storage Technologies (FAST)},
+      Santa Clara, USA, Feb.\ 2025.
+
+\item \textbf{Juwon Kim}, Dongeon Kim, Seung Won Yoo, Myoengin Cheon, Joontaek Oh, Youjip Won,
+      ``lwFSCK: Light-weight Filesystem Check,''
+      in \textit{Proc.\ ACM Symposium on Applied Computing (SAC)},
+      Catania, Italy, Mar.\ 2025.
+
+\item \textbf{Juwon Kim}, Minsu Jang, Danish Muhammad Teeshen, Joontaek Oh, Youjip Won,
+      ``IPLFS: Log-Structured File System without Garbage Collection,''
+      in \textit{Proc.\ USENIX Annual Technical Conference (ATC)},
+      San Diego, USA, Jul.\ 2022.
+
+\end{enumerate}
+
+
+% ── Publications ────────────────────────────────────
+\section{Posters and Workshops}
+\begin{enumerate}[leftmargin=1.6em, label={[\arabic*]}, nosep, itemsep=5pt]
+
+
+\item \textbf{Juwon Kim}, Hwanseok Yoo, Youjip Won,
+      ``Accelerating Filesystem Garbage Collection for Zoned Flash Storage,''
+      in \textit{Proc.\ ACM Symposium on Operating Systems Principles (SOSP)},
+      Seoul, Republic of Korea, Oct.\ 2025.
+
+
+\item Hwanseok Yoo, \textbf{Juwon Kim}, Youjip Won,
+      ``Manycore Scalability of Modern Log-Structured
+Filesystem: Revisited,''
+      in \textit{Proc.\ ACM Symposium on Operating Systems Principles (SOSP)},
+      Seoul, Republic of Korea, Oct.\ 2025.
+
+
+\item \textbf{Juwon Kim}, Minsu Jang, Danish Muhammad Teeshen, Joontaek Oh, Youjip Won,
+      ``IPLFS: Log-Structured File System without Garbage Collection,''
+      in \textit{Proc.\ USENIX Conference on File and Storage Technologies (FAST)},
+      Santa Clara, USA, Feb.\ 2022.
+
+
+
+\end{enumerate}
+
+
+% ── Patents ─────────────────────────────────────────
+\section{Patents}
+\begin{enumerate}[leftmargin=1.6em, label={[\arabic*]}, nosep, itemsep=5pt]
+
+\item Youjip Won and \textbf{Juwon Kim},
+      ``Method and Device for Managing Host Area,''
+      Korean Patent Application No.\ 10-2025-0174419,
+      filed Nov.\ 2025.
+
+\item \textbf{Juwon Kim} and Youjip Won,
+      ``Storage Device Performing Garbage Collection,''
+      Korean Patent Application No.\ 10-2025-0090393,
+      filed Jul.\ 2025.
+      \textit{(Joint filing: SK Hynix \& KAIST)}
+
+\end{enumerate}
+
+
+% % ── Publications ────────────────────────────────────
+% \section{Patents}
+% \begin{enumerate}[leftmargin=1.6em, label={[\arabic*]}, nosep, itemsep=5pt]
+
+% \item \textbf{Juwon Kim}, Youjip Won,
+%       ``METHOD AND DEVICE FOR MANAGING HOST AREA,''
+%        , Feb.\ 2025.
+
+
+% \item \textbf{Juwon Kim}, Minsu Jang, Danish Muhammad Teeshen, Joontaek Oh, Youjip Won,
+%       ``IPLFS: Log-Structured File System without Garbage Collection,''
+%       in \textit{Proc.\ USENIX Annual Technical Conference (ATC)},
+%       San Diego, USA, Jul.\ 2022.
+
+% \end{enumerate}
+
+% ── Awards & Honors ─────────────────────────────────
+\section{Awards \& Honors}
+\begin{itemize}[leftmargin=1.2em, nosep, itemsep=4pt]
+  \item Student Grant (Full), USENIX FAST, USA \hfill Feb.\ 2025
+  \item NVRAMOS 2023 OpenSSD Best Practice Award, Gold Prize, KIISE, Korea \hfill Nov.\ 2023
+  \item Student Grant (Full), USENIX FAST, USA \hfill Feb.\ 2022
+\end{itemize}
+
+% ── Research Projects ───────────────────────────────
+\section{Research Projects}
+
+\entry{Order Preserving Distributed Storage System}
+        {Jun.\ 2025\,--\,Present}
+        {NRF, Korea}{}
+
+\entry{Optimizing Filesystem Garbage Collection for Zoned Flash Storage}
+      {Sep.\ 2024\,--\,Present}
+      {SNU-SKH Solution Research Center, SK Hynix, Korea}{}
+
+\entry{Device-Driven Filesystem Garbage Collection}
+      {Sep.\ 2023\,--\,Aug.\ 2024}
+      {SNU-SKH Solution Research Center, SK Hynix, Korea}{}
+
+\entry{Collection and Integrated Analysis of Automotive Inter/Intra System Artifacts}
+      {Jan.\ 2024\,--\,Feb.\ 2025}
+      {IITP, Korea}{}
+
+\entry{Future Scalable OS: Log-Structured Filesystem without Garbage Collection}
+      {Jan.\ 2021\,--\,May\ 2023}
+      {IITP, Korea}{}
+
+% ── Teaching Experience ─────────────────────────────
+\section{Teaching Experience}
+\begin{itemize}[leftmargin=1.2em, nosep, itemsep=4pt]
+  \item Head TA, Operating Systems and System Programming for EE (EE415),
+        KAIST \hfill Sep.--Dec.\ 2025
+  \item TA, Special Topics in Computer Engineering (EE817),
+        KAIST \hfill Feb.--Jun.\ 2025
+  \item TA, Operating Systems and System Programming for EE (EE415),
+        KAIST \hfill Sep.--Dec.\ 2024
+  \item Head TA, Programming Structure for EE (EE209),
+        KAIST \hfill Feb.--Jun.\ 2024
+  \item TA, Programming Structure for EE (EE209),
+        KAIST \hfill Sep.--Dec.\ 2023
+  \item TA, Programming Structure for EE (EE209),
+        KAIST \hfill Feb.--Jun.\ 2023
+\end{itemize}
+
+% ── Professional Service ────────────────────────────
+\section{Service}
+\begin{itemize}[leftmargin=1.2em, nosep, itemsep=4pt]
+  \item Program Chair Assistant, USENIX FAST~'24 \hfill Sep.\ 2023\,--\,Sep.\ 2024
+\end{itemize}
+
+% ── Technical Skills ────────────────────────────────
+\section{Technical Skills}
+\textbf{Systems:} F2FS, flash translation layer, NVMe driver,
+block I/O layer, ZNS, Page Management Subsystem \\
+\textbf{Languages:} C, Python, C++, SQL, Verilog \\
+\textbf{Tools:} git, vim, gnuplot, ctags, cscope, ftrace, blktrace
+
+% ── References ──────────────────────────────────────
+% \section{References}
+% Available upon request.
+
+\end{document}
+
